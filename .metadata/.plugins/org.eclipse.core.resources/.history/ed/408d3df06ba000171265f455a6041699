@@ -1,0 +1,19 @@
+package algorithms;
+
+public class ShellSort {
+         public int[] sort(int[] a) {
+        	            int dk = a.length/2;
+        	            for(int i = dk;i<a.length;i++) {
+        	            	       int j = i
+        	            }
+        	           return a;
+         }
+	public static void main(String[] args) {
+		int[] a = {10,0,-7,-5,10,-4,-7,0,5,-6};
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + "\t");
+		}
+		
+	}
+
+}

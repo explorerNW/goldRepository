@@ -1,0 +1,560 @@
+
+9月 10, 2017 20:08:18.24 NEW SESSION
+9月 10, 2017 20:08:18.24 1505045298241	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+9月 10, 2017 20:57:45.40 Unable to read VR Path Registry from C:\Users\Mr.Nie\AppData\Local\openvr\openvrpaths.vrpath
+9月 10, 2017 20:57:45.40 [Parent 3312] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 20:58:25.91 Unable to read VR Path Registry from C:\Users\Mr.Nie\AppData\Local\openvr\openvrpaths.vrpath
+9月 10, 2017 20:58:25.91 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 20:58:52.20 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 20:58:52.20 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 20:58:52.20 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 20:58:52.21 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 20:58:52.21 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 20:58:52.21 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 20:58:52.21 Line: 1281, column: 20
+9月 10, 2017 20:58:52.21 console.error: 
+9月 10, 2017 20:58:52.21   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 20:58:52.21 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 20:58:52.21 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 20:58:52.21 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 20:58:52.21 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 20:58:52.21 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 20:58:52.22 Line: 1281, column: 20
+9月 10, 2017 20:58:52.44 console.log: plural-form.js: Index #1 of '鍐嶆樉绀轰竴涓妭鐐癸紱鏄剧ず鍏ㄩ儴 #1 涓妭鐐�' for value 3 is invalid -- plural rule #1;
+9月 10, 2017 20:58:52.44 
+9月 10, 2017 20:59:31.43 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 20:59:31.43 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 20:59:31.43 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 20:59:31.43 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 20:59:31.43 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 20:59:31.43 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 20:59:31.43 Line: 1281, column: 20
+9月 10, 2017 20:59:31.43 console.error: 
+9月 10, 2017 20:59:31.44   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 20:59:31.44 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 20:59:31.44 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 20:59:31.44 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 20:59:31.44 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 20:59:31.44 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 20:59:31.44 Line: 1281, column: 20
+9月 10, 2017 21:00:46.18 [Parent 3312] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 21:05:07.13 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:05:07.13 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:05:07.13 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:05:07.13 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:05:07.13 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:05:07.13 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:05:07.13 Line: 1281, column: 20
+9月 10, 2017 21:05:07.14 console.error: 
+9月 10, 2017 21:05:07.14   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:05:07.14 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:05:07.14 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:05:07.14 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:05:07.14 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:05:07.14 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:05:07.14 Line: 1281, column: 20
+9月 10, 2017 21:06:17.13 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:17.13 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:17.13 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:17.13 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:17.13 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:17.13 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:17.13 Line: 1281, column: 20
+9月 10, 2017 21:06:17.14 console.error: 
+9月 10, 2017 21:06:17.14   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:17.14 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:17.14 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:17.14 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:17.14 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:17.14 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:17.14 Line: 1281, column: 20
+9月 10, 2017 21:06:30.51 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:30.51 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:30.51 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:30.51 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:30.51 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:30.51 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:30.51 Line: 1281, column: 20
+9月 10, 2017 21:06:30.51 console.error: 
+9月 10, 2017 21:06:30.51   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:30.51 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:30.51 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:30.51 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:30.52 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:30.52 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:30.52 Line: 1281, column: 20
+9月 10, 2017 21:06:48.25 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:48.25 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:48.25 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:48.26 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:48.26 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:48.26 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:48.26 Line: 1281, column: 20
+9月 10, 2017 21:06:48.26 console.error: 
+9月 10, 2017 21:06:48.26   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:06:48.26 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:06:48.26 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:06:48.26 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:06:48.26 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:06:48.26 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:06:48.27 Line: 1281, column: 20
+9月 10, 2017 21:07:38.13 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:07:38.13 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:07:38.13 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:07:38.13 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:07:38.13 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:07:38.13 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:07:38.13 Line: 1281, column: 20
+9月 10, 2017 21:07:38.13 console.error: 
+9月 10, 2017 21:07:38.14   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:07:38.14 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:07:38.14 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:07:38.14 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:07:38.14 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:07:38.14 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:07:38.14 Line: 1281, column: 20
+9月 10, 2017 21:09:06.21 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 21:09:06.21 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 21:09:57.70 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 21:09:57.70 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 21:45:30.97 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:45:30.97 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:45:30.97 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:45:30.97 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:45:30.98 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:45:30.98 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:45:30.98 Line: 1281, column: 20
+9月 10, 2017 21:45:30.98 console.error: 
+9月 10, 2017 21:45:30.98   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:45:30.98 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:45:30.98 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:45:30.98 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:45:30.98 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:45:30.98 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:45:30.98 Line: 1281, column: 20
+9月 10, 2017 21:50:56.64 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:50:56.64 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:50:56.65 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:50:56.65 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:50:56.65 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:50:56.65 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:50:56.65 Line: 1281, column: 20
+9月 10, 2017 21:50:56.65 console.error: 
+9月 10, 2017 21:50:56.65   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:50:56.65 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:50:56.65 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:50:56.65 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:50:56.65 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:50:56.66 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:50:56.66 Line: 1281, column: 20
+9月 10, 2017 21:56:17.30 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:56:17.30 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:56:17.31 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:56:17.31 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:56:17.31 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:56:17.31 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:56:17.31 Line: 1281, column: 20
+9月 10, 2017 21:56:17.31 console.error: 
+9月 10, 2017 21:56:17.31   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:56:17.31 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:56:17.31 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:56:17.31 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:56:17.31 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:56:17.32 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:56:17.32 Line: 1281, column: 20
+9月 10, 2017 21:56:27.74 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:56:27.74 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:56:27.74 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:56:27.74 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:56:27.74 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:56:27.74 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:56:27.74 Line: 1281, column: 20
+9月 10, 2017 21:56:27.75 console.error: 
+9月 10, 2017 21:56:27.75   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:56:27.75 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:56:27.75 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:56:27.75 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:56:27.75 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:56:27.75 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:56:27.75 Line: 1281, column: 20
+9月 10, 2017 21:57:16.41 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:57:16.42 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:57:16.42 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:57:16.42 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:57:16.42 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:57:16.42 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:57:16.42 Line: 1281, column: 20
+9月 10, 2017 21:57:16.42 console.error: 
+9月 10, 2017 21:57:16.42   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:57:16.42 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:57:16.42 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:57:16.42 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:57:16.42 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:57:16.43 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:57:16.43 Line: 1281, column: 20
+9月 10, 2017 21:58:25.76 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:58:25.76 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:58:25.76 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:58:25.76 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:58:25.76 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:58:25.76 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:58:25.76 Line: 1281, column: 20
+9月 10, 2017 21:58:25.76 console.error: 
+9月 10, 2017 21:58:25.76   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 21:58:25.76 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 21:58:25.77 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 21:58:25.77 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 21:58:25.77 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 21:58:25.77 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 21:58:25.77 Line: 1281, column: 20
+9月 10, 2017 21:58:36.78 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 10, 2017 22:00:26.12 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:00:26.12 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:00:26.12 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:00:26.12 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:00:26.12 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:00:26.12 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:00:26.12 Line: 1281, column: 20
+9月 10, 2017 22:00:26.12 console.error: 
+9月 10, 2017 22:00:26.12   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:00:26.12 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:00:26.12 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:00:26.13 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:00:26.13 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:00:26.13 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:00:26.13 Line: 1281, column: 20
+9月 10, 2017 22:01:10.83 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:10.83 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:10.83 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:10.83 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:10.83 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:10.83 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:10.83 Line: 1281, column: 20
+9月 10, 2017 22:01:10.83 console.error: 
+9月 10, 2017 22:01:10.84   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:10.84 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:10.84 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:10.84 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:10.84 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:10.84 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:10.84 Line: 1281, column: 20
+9月 10, 2017 22:01:32.63 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:32.63 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:32.64 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:32.64 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:32.64 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:32.64 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:32.64 Line: 1281, column: 20
+9月 10, 2017 22:01:32.64 console.error: 
+9月 10, 2017 22:01:32.64   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:32.64 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:32.64 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:32.64 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:32.64 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:32.64 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:32.64 Line: 1281, column: 20
+9月 10, 2017 22:01:38.10 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:38.11 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:38.11 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:38.11 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:38.11 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:38.11 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:38.11 Line: 1281, column: 20
+9月 10, 2017 22:01:38.11 console.error: 
+9月 10, 2017 22:01:38.11   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:01:38.11 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:01:38.11 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:01:38.11 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:01:38.12 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:01:38.12 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:01:38.12 Line: 1281, column: 20
+9月 10, 2017 22:02:20.15 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:02:20.15 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:02:20.15 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:02:20.15 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:02:20.15 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:02:20.15 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:02:20.15 Line: 1281, column: 20
+9月 10, 2017 22:02:20.15 console.error: 
+9月 10, 2017 22:02:20.15   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:02:20.16 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:02:20.16 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:02:20.16 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:02:20.16 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:02:20.16 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:02:20.16 Line: 1281, column: 20
+9月 10, 2017 22:06:19.89 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:06:19.89 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:06:19.89 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:06:19.89 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:06:19.89 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:06:19.89 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:06:19.89 Line: 1281, column: 20
+9月 10, 2017 22:06:19.89 console.error: 
+9月 10, 2017 22:06:19.89   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:06:19.89 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:06:19.90 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:06:19.90 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:06:19.90 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:06:19.90 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:06:19.90 Line: 1281, column: 20
+9月 10, 2017 22:06:30.04 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:06:30.04 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:06:30.04 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:06:30.04 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:06:30.04 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:06:30.04 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:06:30.04 Line: 1281, column: 20
+9月 10, 2017 22:06:30.04 console.error: 
+9月 10, 2017 22:06:30.04   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:06:30.04 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:06:30.04 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:06:30.04 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:06:30.05 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:06:30.05 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:06:30.05 Line: 1281, column: 20
+9月 10, 2017 22:07:03.02 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:07:03.02 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:07:03.02 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:07:03.02 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:07:03.02 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:07:03.02 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:07:03.02 Line: 1281, column: 20
+9月 10, 2017 22:07:03.02 console.error: 
+9月 10, 2017 22:07:03.02   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:07:03.03 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:07:03.03 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:07:03.03 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:07:03.03 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:07:03.03 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:07:03.03 Line: 1281, column: 20
+9月 10, 2017 22:07:28.36 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:07:28.36 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:07:28.36 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:07:28.36 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:07:28.36 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:07:28.36 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:07:28.37 Line: 1281, column: 20
+9月 10, 2017 22:07:28.37 console.error: 
+9月 10, 2017 22:07:28.37   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:07:28.37 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:07:28.37 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:07:28.37 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:07:28.37 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:07:28.37 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:07:28.37 Line: 1281, column: 20
+9月 10, 2017 22:08:33.89 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:08:33.89 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:08:33.89 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:08:33.89 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:08:33.89 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:08:33.89 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:08:33.89 Line: 1281, column: 20
+9月 10, 2017 22:08:33.89 console.error: 
+9月 10, 2017 22:08:33.89   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 10, 2017 22:08:33.90 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 10, 2017 22:08:33.90 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 10, 2017 22:08:33.90 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 10, 2017 22:08:33.90 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 10, 2017 22:08:33.90 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 10, 2017 22:08:33.90 Line: 1281, column: 20
+9月 11, 2017 08:30:33.98 
+9月 11, 2017 08:30:34.02 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.02 
+9月 11, 2017 08:30:34.02 
+9月 11, 2017 08:30:34.02 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.02 
+9月 11, 2017 08:30:34.29 
+9月 11, 2017 08:30:34.29 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.29 
+9月 11, 2017 08:30:34.29 
+9月 11, 2017 08:30:34.29 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.30 
+9月 11, 2017 08:30:34.30 
+9月 11, 2017 08:30:34.30 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.30 
+9月 11, 2017 08:30:34.30 
+9月 11, 2017 08:30:34.30 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.30 
+9月 11, 2017 08:30:34.32 
+9月 11, 2017 08:30:34.32 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.32 
+9月 11, 2017 08:30:34.32 
+9月 11, 2017 08:30:34.32 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.32 
+9月 11, 2017 08:30:34.34 
+9月 11, 2017 08:30:34.34 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.34 
+9月 11, 2017 08:30:34.34 
+9月 11, 2017 08:30:34.34 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.35 
+9月 11, 2017 08:30:34.37 
+9月 11, 2017 08:30:34.37 ###!!! [Parent][MessageChannel] Error: (msgtype=0x28008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.37 
+9月 11, 2017 08:30:34.37 
+9月 11, 2017 08:30:34.37 ###!!! [Parent][MessageChannel] Error: (msgtype=0x280080,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+9月 11, 2017 08:30:34.37 
+9月 11, 2017 08:30:46.37 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 08:30:46.37 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 08:30:46.37 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 08:30:46.38 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 08:30:46.38 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 08:30:46.38 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 08:30:46.38 Line: 1281, column: 20
+9月 11, 2017 08:30:46.38 console.error: 
+9月 11, 2017 08:30:46.38   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 08:30:46.38 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 08:30:46.38 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 08:30:46.38 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 08:30:46.38 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 08:30:46.38 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 08:30:46.38 Line: 1281, column: 20
+9月 11, 2017 08:31:51.98 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 08:31:51.98 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 08:31:51.99 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 08:31:51.99 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 08:31:51.99 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 08:31:51.99 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 08:31:51.99 Line: 1281, column: 20
+9月 11, 2017 08:31:51.99 console.error: 
+9月 11, 2017 08:31:51.99   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 08:31:51.99 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 08:31:51.99 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 08:31:51.99 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 08:31:51.99 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 08:31:52.00 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 08:31:52.00 Line: 1281, column: 20
+9月 11, 2017 08:32:29.46 [Parent 3312] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:34:50.52 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:34:55.28 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:00.52 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:04.65 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:04.67 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:04.67 [GPU 6504] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:04.68 console.error: 
+9月 11, 2017 08:35:04.68   TypeError: this.tab.linkedBrowser.addProgressListener is not a function: _setupListeners@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:498:5
+9月 11, 2017 08:35:04.68 TabTarget@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:128:5
+9月 11, 2017 08:35:04.68 forTab@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:36:16
+9月 11, 2017 08:35:04.68 onToolboxDestroyed@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:632:23
+9月 11, 2017 08:35:04.68 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:194:13
+9月 11, 2017 08:35:04.68 DevTools.prototype.createToolbox</<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/devtools.js:482:7
+9月 11, 2017 08:35:04.68 handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:138:34
+9月 11, 2017 08:35:04.68 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:194:13
+9月 11, 2017 08:35:04.68 destroy/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/toolbox.js:2466:11
+9月 11, 2017 08:35:04.68 
+9月 11, 2017 08:35:04.68 TypeError: this.tab.linkedBrowser.addProgressListener is not a function: _setupListeners@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:498:5
+9月 11, 2017 08:35:04.68 TabTarget@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:128:5
+9月 11, 2017 08:35:04.68 forTab@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:36:16
+9月 11, 2017 08:35:04.68 onToolboxDestroyed@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/target.js:632:23
+9月 11, 2017 08:35:04.68 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:194:13
+9月 11, 2017 08:35:04.68 DevTools.prototype.createToolbox</<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/devtools.js:482:7
+9月 11, 2017 08:35:04.68 handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:138:34
+9月 11, 2017 08:35:04.69 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/event-emitter.js:194:13
+9月 11, 2017 08:35:04.69 destroy/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/framework/toolbox.js:2466:11
+9月 11, 2017 08:35:04.69 
+9月 11, 2017 08:35:04.70 [Parent 3312] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+9月 11, 2017 08:35:06.25 
+9月 11, 2017 08:35:06.25 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+9月 11, 2017 08:35:06.25 
+9月 11, 2017 11:50:50.28 1505101850284	addons.webextension.wx-assistant@mozillaonline.com	WARN	Please specify whether you want browser_style or not in your browser_action options.
+9月 11, 2017 11:50:50.84 Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionUtils.jsm :: runSafeSyncWithoutClone :: line 52"  data: no] undefined 52
+9月 11, 2017 11:50:50.84 [[Exception stack
+9月 11, 2017 11:50:50.84 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:52:14
+9月 11, 2017 11:50:50.84 inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:306:13
+9月 11, 2017 11:50:50.84 Current stack
+9月 11, 2017 11:50:50.84 runSafeSyncWithoutClone@resource://gre/modules/ExtensionUtils.jsm:54:129
+9月 11, 2017 11:50:50.84 inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:306:13
+9月 11, 2017 11:50:50.84 ]]
+9月 11, 2017 11:50:52.12 1505101852125	addons.xpi	WARN	Add-on dict@www.youdao.com is not correctly signed.
+9月 11, 2017 11:50:52.14 1505101852148	addons.xpi	WARN	Add-on dict@www.youdao.com is not correctly signed.
+9月 11, 2017 11:50:52.14 1505101852148	addons.xpi-utils	WARN	Disabling foreign installed add-on dict@www.youdao.com in winreg-app-user
+9月 11, 2017 12:04:45.33 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:04:45.34 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:04:45.34 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:04:45.34 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:04:45.34 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:04:45.34 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:04:45.34 Line: 1281, column: 20
+9月 11, 2017 12:04:45.34 console.error: 
+9月 11, 2017 12:04:45.34   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:04:45.34 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:04:45.34 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:04:45.34 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:04:45.34 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:04:45.34 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:04:45.34 Line: 1281, column: 20
+9月 11, 2017 12:06:24.93 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:06:24.93 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:06:24.93 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:06:24.93 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:06:24.93 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:06:24.93 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:06:24.94 Line: 1281, column: 20
+9月 11, 2017 12:06:24.94 console.error: 
+9月 11, 2017 12:06:24.94   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:06:24.94 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:06:24.94 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:06:24.94 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:06:24.94 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:06:24.94 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:06:24.95 Line: 1281, column: 20
+9月 11, 2017 12:08:09.39 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:09.39 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:09.39 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:09.39 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:09.39 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:09.39 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:09.39 Line: 1281, column: 20
+9月 11, 2017 12:08:09.39 console.error: 
+9月 11, 2017 12:08:09.39   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:09.39 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:09.39 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:09.40 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:09.40 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:09.40 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:09.40 Line: 1281, column: 20
+9月 11, 2017 12:08:34.84 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:34.84 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:34.84 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:34.84 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:34.84 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:34.84 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:34.85 Line: 1281, column: 20
+9月 11, 2017 12:08:34.85 console.error: 
+9月 11, 2017 12:08:34.85   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:34.85 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:34.85 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:34.85 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:34.85 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:34.85 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:34.85 Line: 1281, column: 20
+9月 11, 2017 12:08:58.94 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:58.94 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:58.94 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:58.94 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:58.94 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:58.94 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:58.94 Line: 1281, column: 20
+9月 11, 2017 12:08:58.94 console.error: 
+9月 11, 2017 12:08:58.94   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:08:58.94 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:08:58.94 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:08:58.94 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:08:58.95 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:08:58.95 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:08:58.95 Line: 1281, column: 20
+9月 11, 2017 12:09:07.72 TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:09:07.72 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:09:07.72 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:09:07.72 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:09:07.72 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:09:07.72 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:09:07.72 Line: 1281, column: 20
+9月 11, 2017 12:09:07.72 console.error: 
+9月 11, 2017 12:09:07.72   TabSources.prototype._fetchSourceMap threw an exception: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+9月 11, 2017 12:09:07.72 Stack: SourceMapConsumer@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/sourcemap/source-map.js:1281:20
+9月 11, 2017 12:09:07.72 _fetchSourceMap/fetching<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/utils/TabSources.js:458:19
+9月 11, 2017 12:09:07.73 process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+9月 11, 2017 12:09:07.73 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+9月 11, 2017 12:09:07.73 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+9月 11, 2017 12:09:07.73 Line: 1281, column: 20

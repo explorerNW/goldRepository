@@ -1,0 +1,14 @@
+package test6;
+
+public class Test {
+
+	public static void main(String[] args) {
+		          int[] a = new int[10];		          		          
+                  int[] b = new int[] {};
+                  int[] c = {1};
+                  
+                  
+                  int[] array1 = new int[] {1,2};
+	}
+
+}

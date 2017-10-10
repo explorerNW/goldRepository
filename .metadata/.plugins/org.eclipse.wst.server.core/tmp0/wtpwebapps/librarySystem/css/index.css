@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+body,ul,li,p{padding:0;margin:0;}   
+                 body{background-image:url(../images/libraryIMG.jpg);background-size:100% 120%;}              
+                 a{text-decoration:none;color:black;} 
+                 li{list-style:none;}
+                 table{border-collapse:collapse;}
+                 .floatLeft{float:left;}
+                 .floatRight{float:right;}
+                 .clear{clear:both;}
+                 .inline{display:inline;}
+                 .hidden{display:none;}
+  
+                 
+                 .top{height:40px;background:rgb(80,200,80);}
+                 .top span{margin-left:50px;}
+                 .top span a{padding:10px 5px;color:black;}
+                 .top span a:hover{color:red;background:rgb(100,100,120);color:white}
+                 .top ul{margin-right:100px;}
+                 .top ul>li>img{width:38px;height:38px;float:left;}                
+                 .top input[type = "button"]{width:50px;border:0;background-color:orange;border-radius:3px;}
+                 .top input{height:30px;}
+                 .top input[id = "search"]{width:200px;}                 
+                 .top a{padding:10px 2px;line-height:38px;}
+                 .top a:hover input[type = "button"]{background:yellow;cursor:pointer;}
+                 .top li,input[type = "text"]{float:left;}
+                 .top li:first-child{margin-right:150px;} 
+                 .top input[id = "login"]:hover{background-color:yellow;cursor:pointer;}
+                 .top a.myPage{font-size:13px;color:#ffff00}
+                 .top a.myPage:hover{color:white;}
+                 .top div.loginUI{position:absolute;top:150px;left:520px;width:350px;border:1px solid red;background:#fff;display:none;}
+                 .top div.loginUI img{width:20px;height:20px;cursor:pointer;}                 
+                 .top div.loginUI table{margin:10px 12px;margin-top:20px;}
+                 .top div.loginUI table td:first-child{text-align:right;}                                
+                 .top div.loginUI table tr:last-child span{font-size:12px;}                                     
+                 .top div.loginUI table tr:last-child input[id = "login2"]{width:80px;}
+                 .top div.loginUI table tr:last-child span.floatLeft{margin:0;}
+                 .top div.loginUI table tr:last-child td{position:relative;}                
+                 .top div.loginUI table td:last-child input[id = "UID"],input[type = "password"]{width:275px;border:0px;}
+                 .top div.loginUI table td:last-child input[type = "submit"]{border-radius:3px;border:0;background:#abc;float:left;margin-top:5px;}
+                 .top div.loginUI table td:last-child input[type = "submit"]:hover{background-color:orange;}                                                                         
+                 .top div.loginUI span:nth-child(1){margin:5px;}
+                 .top div.loginUI span:nth-child(2){font-size:20px;font-weight:bold;margin-top:30px;}
+                 .top div.loginUI span:nth-child(3){font-size:11px;margin-top:30px;}                 
+                 .top div.loginUI span>a{color:red;font-size:14px;}
+                 .top div.loginUI span>a:hover{color:white;background-color:orange;}  
+                        
+                 
+                 .commend div.commendLeft{width:200px;}                 
+                 .commend div.commendLeft ul>li{width:200px;height:40px;text-align:center;line-height:40px;background:#3c9dff;margin-bottom:3px;box-shadow:3px 3px 3px;}
+                 .commend div.commendLeft ul>li:hover{background:#0065ca;color:white;}
+                 
+                 .commend div.commendCenter{width:1140px;}
+                 .commend div.commendCenter ul>li{float:left;margin:0 6px;border:2px solid #b7c53a;margin-bottom:5px;background:#a89215;}
+                 .commend div.commendCenter ul>li>a:hover{color:white;}               
+                 .commend div.commendCenter ul>li>a span{text-align:center;}                 
+                 .commend div.commendCenter ul>li>a>img{width:210px;height:210px;}
+                 
+                 .commendRight a:hover{color:white;}
+                 
+                 
+                 
+                 
+                 
+                 
+                 

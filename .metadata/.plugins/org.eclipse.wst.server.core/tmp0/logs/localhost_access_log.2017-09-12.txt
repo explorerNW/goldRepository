@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:31:43 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:27:20 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:11 +0800] "GET /vueTest/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:12 +0800] "GET /vueTest/js/jQuery-v3.2.1.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:12 +0800] "GET /vueTest/js/axios.min.map HTTP/1.1" 404 1042
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:16 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:21 +0800] "GET /vueTest/js/axios.min.map HTTP/1.1" 404 1042
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:23 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:41:52 +0800] "GET /vueTest/js/axios.min.map HTTP/1.1" 404 1042
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:42:03 +0800] "GET /vueTest/js/axios.min.map HTTP/1.1" 404 1042
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:42:22 +0800] "GET /vueTest/js/axios.min.map HTTP/1.1" 404 1042
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:17:42:30 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:18:18:23 +0800] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:18:18:23 +0800] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [12/Sep/2017:22:08:13 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:23:11:32 +0800] "GET /vueTest/text HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:23:11:34 +0800] "POST /vueTest/print.action HTTP/1.1" 200 12

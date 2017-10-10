@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vueTest</title>
+<link rel="stylesheet" type = "text/css" href = "css/animate.css"/>
+<script type = "text/javascript" src = "js/vue-developmentMode.js"></script>
+<script type = "text/javascript" src = "js/Velocity.js"></script>
+<!--  script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>-->
+<script type = "text/javascript" src="js/lodash.js"></script>
+<script type = "text/javascript" src="js/axios-v0.16.1.js"></script>
+<script type = "text/javascrit" src = "js/tween.js"></script>
+<script type = "text/javascript" src = "js/TweenMax.min.js"></script>
+<style type = "text/css">
+              body,p,h1,h2,h3{margin:0;padding:0;text-align:center;}              
+              li{list-style:decimal;}
+              #mesg1{border:1px solid red;}
+              .active{font-size:20px;color:blue;}
+              .hasError{font-size:25px;color:red;}            
+              table{border-collapse: collapse;border: 3px solid black;}                             
+              .fade-enter-active{transition: all .7s ease-in-out;}
+              .fade-enter,.fade-leave-active{opacity: 0;transform: translateX(-20px);}   
+              .bounce-enter-active{animation: bounce-in 0.5s;}
+              .bounce-leave-active{animation: bounce-out 0.5s;}
+              .flip-list-enter-active,.flip-list-leave-active{transition: all .5s ease-in-out;}
+              .flip-list-enter,.flip-list-leave-active{opacity: 0;transform: translateY(30px);}
+              .flip-list-move{transition: transform 1s;}
+              #listTest{width: 200px;border: 1px solid black;margin:0 auto;}
+              .listItem{display: inline-block;width: 20px;height:20px;text-align: center;border: 1px solid black;}
+              @keyframes bounce-in{
+                         0%{transform: scale(0) translateX(-30px);}
+                         25%{transform: scale(0.5) translateX(-10px);}
+                         50{transform: scale(1) translateX(0px);}
+                         75%{transform: scale(0.25) translateX(30px);}
+                         100%{transform: scale(1.0) translateX(0px);}
+              }
+              @keyframes bounce-out{
+                         0%{transform:scale(1.0) translateX(0px);}
+                         25%{transform:scale(0.25) translateX(30px);}
+                         50{transform:scale(0,5) translateX(0px);}
+                         75%{transform:scale(0.75) translateX(-10px);}
+                         100%{transform:scale(0.0) translateX(-30px);}
+              }                                                            
+              #animationTest{width:200px;height:200px;margin:0 auto;border:1px solid red;}
+              #staggered-list{width: 300px;height: 400px; margin:0 auto;border: 1px solid black;overflow: scroll;}
+              svg { display: block; }
+		      polygon { fill: #41B883; }
+			  circle {fill: transparent;stroke: #35495E;}
+			  input[type="range"] {display: block;width: 100%;margin-bottom: 15px;}
+              
+              
+</style>
+</head>
+<body>             
+             <div id="mesg1" v-if = "seen" v-on:click="reverse('')">
+                 <span>{{message}}</span>
+  				 <ol>
+    				<li v-for="todo in todos" v-text="todo.text"></li>
+  				</ol>
+  				<input type = "text" v-model="message" />
+  				<a v-bind:href="url">{{reverse("librarySystem")}}</a>
+  				<p v-bind:class = "{'active':isActive, 'hasError':hasError}">{{now()}}</p>
+  				<p v-bind:class = "{'active':classObject.isActive, 'hasError':classObject.hasError}">{{now()}}</p>
+  				<p v-bind:class = "classObject2">{{now()}} &nbsp;&nbsp;{{now2}} </p>  				
+  		        <h2>{{reversMessage}}</h2>	
+  		        <h2>{{classObject2}}</h2>	
+  		        <p>my full name is {{fullName}}</p>		
+  		        <p>my full name is {{fullName2 = "Zhang San"}}</p>
+  		        <label>Please input your question:<input v-model="question" /></label>
+  		        <span>{{answer}}</span>
+  		        <my-component v-bind:class="{'active':isActive, 'hasError':hasError}"></my-component>
+  		        <my-component v-bind:style="styleObject"></my-component>
+			 </div>			 
+			 <div id = "formTest">
+			         <table border = 1>
+			                <tr>		
+			                     <td>
+			                           <span v-if="usernameMode == true">username</span>
+			                           <span v-if="emailMode == true">email</span>
+			                     </td>	                     
+			                     <td>
+				                     <template v-if="usernameMode == true">
+							                 <input placeholder="Please enter your name..." />
+						             </template>
+						             <template v-else><!-- v-if="emailMode == true" -->
+						                     <input placeholder="Please enter your email..." />
+					                 </template>
+			                     </td>			                     
+			                </tr>
+			                <tr>
+			                     <td>
+			                         <input type = "radio" name="loginMode" v-on:click="change('usernameMode')" checked />username
+			                     </td>
+			                     <td>
+			                         <input type = "radio" name="loginMode" v-on:click="change('emailMode')" />email
+			                     </td>
+			                </tr>
+			         </table>				        	 	
+			 </div>
+             <div id = "todo-list-example">
+                      <input v-model="newTodoText" v-on:keyup.enter = "addToList" />
+                      <ul>
+                            <!-- <li is="todo-item" v-for="(todo, index) in list" v-bind:title="todo" v-on:remove="list.splice(index, 1)"></li>  -->
+                            <li v-for="(todo, index) in list" :key="todo.id"  v-bind:title="todo">{{todo}} <button v-on:click="list.splice(index,1)">X</button></li>                            
+                      </ul>
+                      <hr>
+                      <span>odd : {{odd()}}</span><br>
+                      <hr>
+                      <span>even : {{even()}}</span>  
+                      <span>filter : {{filter()}}</span><br>
+                      <hr>
+                      <button v-on:click="counter()">+1</button>
+                      <span>count的值为：{{count}}</span>
+                      <button v-on:click="reducer()">-1</button>                      
+                                  <label>请输入网址：<input v-on:keyup.enter = "toPage()" v-model = "url" placeholder = "Please enter the url..."></label>
+                                  <a v-bind:href = "url">{{url}}</a>
+                      <span v-on:click="Alert('I\'mspan', $event)"><button v-on:click.stop = "Alert('alert!',$event)">alert</button></span>
+                      <form v-on:click.prevent>
+                                   <input  v-model="username" v-on:keyup.f = "Alert('key error!', $event)"/>
+                                   <input type = "submit"  />
+                      </form>                      
+             </div>
+             <div id = "formCheck">
+                        <input type = "checkbox" id = "swim" value="swim" v-model="hobbies" /><label for="swim">swim</label>
+                        <input type = "checkbox" id = "jump" value="jump" v-model="hobbies" /><label for="jump">jump</label>
+                        <input type = "checkbox" id = "hick" value="hick"  v-model="hobbies" /><label for="swim">hick</label>
+                        <input type = "checkbox" id = "riding" value="riding" v-model="hobbies"  /><label for="swim">riding</label>
+                        <label for="options">my hobbies : <span id = "options" v-text="hobbies"></span></label><br>
+                        <input type = "radio" id = "male" value="male" v-model="sex" v-bind:value="male" /><label for="male">male</label>
+                        <input type = "radio" id = "female" value="female" v-model="sex" v-bind:value="female" /><label for="female">female</label>
+                        <label for="sex">Sex : <span id = "sex" v-text="sex"></span></label>
+                        <br>
+                        <select v-model = "selecteds" multiple >
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                        </select>
+                        <span v-text = "selecteds"></span>
+                        <br>
+                        <select v-model = "selected">
+                            <option v-for="option in options" v-bind:value="option.value" v-text="option.text"></option>
+                        </select>
+                        <span v-text="selected"></span>
+                        <!--  --> 
+                        <input v-model.lazy="lazy" placeholder = "Please enter something..." v-on:keyup.enter="Alert(lazy, $event)" />
+                        <input type = "number" v-model.number = "age" v-on:keyup.enter="Alert(age, $event)" />
+             </div>
+             <div id = "myComponent">
+                          <simple-component></simple-component>
+                          <simple-component></simple-component>
+                          <simple-component></simple-component>                          
+                          <child></child> 
+                          <input v-model="message" />               
+                          <child2 v-bind:message2="message"></child2>
+                          <input v-model="number"/>
+                          <comp  v-bind:number="number" v-bind:number2="number" v-on:alert2.native="Alert"></comp>                          
+             </div>
+             <div id = "counter-event-example">                   
+                         <span v-text="total"></span>
+                         <button-counter v-on:child-counter="totalCounter"></button-counter>
+                         <button-counter v-on:child-counter="totalCounter"></button-counter>
+             </div>
+             <div id = "app">
+                      <mycomponent label="price" v-model="price" ></mycomponent>
+                      <mycomponent label="price2" v-model="price2" ></mycomponent>
+                      <span v-text="price"></span>
+             </div>
+             <div id = "componentTest">
+                        <parent-component></parent-component>
+                        <app-layout>                     
+			                     <h1 slot = "header">Here is title of this page</h1>
+				                      <p>main content</p> 
+                                 <h2 slot = "footer">There is the footer of the page!</h2>           
+                                 <template scope="props">	                                  
+                                      <span v-text="props.text"></span>                                     
+                                 </template>                                                                                                                               
+                        </app-layout>
+             </div>
+             <div id = "app2">
+                   <keep-alive>
+                       <component v-bind:is="currentView"></component>
+                       <component v-bind:is="currentView2"></component>
+                   </keep-alive>                  
+                   <list-component></list-component>
+                   <example></example>  
+                   <span v-text="message"></span>                 
+             </div>                                                                                    
+             <div id = "animationTest">
+                          <button v-on:click="show = !show">toggle</button><br>                        
+	                          <transition                                                             
+	                               v-on:before-enter = "beforeEnter"
+	                               v-on:enter = "enter"
+	                               v-on:leave = "leave"
+	                               v-bind:css = "false"
+	                          >
+	                                    <p v-if="show" v-text="message"></p>                          
+	                          </transition>	                                                
+	                          <component v-bind:is="currentView"></component>
+	                          <transition name = "fade" mode="out-in">
+	                                 <button v-if="on" v-on:click="on = !on" v-text = "buttonMessage" key = "on"></button>
+	                                 <button v-else v-on:click="on = !on" v-text = "buttonMessage" key = "off"></button>
+	                          </transition>
+	                          	                          
+             </div>
+             <div id = "listTest">
+                          <button v-if="show" v-on:click = "add">add</button>
+                          <button v-if="show"v-on:click = "remove">remove</button>
+                          <button v-on:click = "shuffle">shuffle</button>
+                          <br>                          
+                          <transition-group name = "flip-list" model = "out-in" tag="p">
+                                           <span v-for="item in list" v-bind:key = "item.id" v-text = "item.number" class = "listItem"></span>
+                          </transition-group>                          
+             </div>
+             <div id = "staggered-list">
+                        <input v-model = "query" />
+                        <transition-group name = "flip-list" model = "out-in" tag = "ul"
+                                  v-bind:css = "false"
+                                  v-on:before-enter = "beforeEnter"
+                                  v-on:enter = "enter"
+                                  v-on:leave = "leave"
+                        >
+                                          <li v-for="(item, index) in computedList" :key = "item.mesg" v-text="item.mesg" :data-index = "index"></li>                                     
+                        </transition-group>
+             </div>
+             <div id = "renderTest">
+                         <anchored-heading v-for="level in levels" :level = "level.degree" :key = "level.degree" v-text="level.data"></anchored-heading>                         
+             </div> 
+             <div id="app3">
+						  <svg width="200" height="200">
+						    <polygon :points="points"></polygon>
+						    <circle cx="100" cy="100" r="90"></circle>
+						  </svg>
+						  <label>Sides: {{ sides }}</label>
+						  <input 
+						    type="range" 
+						    min="3" 
+						    max="500" 
+						    v-model.number="sides"
+						  >
+						  <label>Minimum Radius: {{ minRadius }}%</label>
+						  <input 
+						    type="range" 
+						    min="0" 
+						    max="90" 
+						    v-model.number="minRadius"
+						  >
+						  <label>Update Interval: {{ updateInterval }} milliseconds</label>
+						  <input 
+						    type="range" 
+						    min="10" 
+						    max="2000"
+						    v-model.number="updateInterval"
+						  >
+	        </div>
+             <div id = "fileUpload">
+                          <form method = "post" enctype = "multipart/form-data"  action = "FileUpload" onsubmit = "alert()">
+                             <input type = "file" multiple = "multiple"  name = "fileupload" />
+                             <input type = "submit" />
+                          </form>
+             </div>
+             <input type = "password" id = "inputPWD" />
+</body> 
+<script type = "text/javascript">
+					Vue.component('my-component',{
+					    template : "<p>I'm a template!</p>"
+					});
+                   var message = new Vue({
+                	   el:"#mesg1",
+                	   data:{
+                		       message:"Here is a Vue!",
+                		       name:"NieWang",
+                		       firstName:"Nie",
+                		       lastName:"Wang",
+                		       question:'',
+                		       answer:"I can't give you a answer until you ask a question:)",
+                		       seen:true,
+                		       todos:[
+                       		   	{text:'learn javascript'},
+                       		   	{text:'learn vue.'}
+                       	   ],
+                       	   styleObject:{
+                       		      color:'red',
+                       		      fontSize:'20px'
+                       	   },
+                       	   url:"http://www.explorernw.top/librarySystem",
+                       	   isActive:true,
+                       	   hasError:false,
+                       	   classObject:{
+                       		          isActive:false,
+                       		          hasError:true
+                       	   }
+                	   },                	   
+                	   methods:{
+		                		   reverse:function(value){
+			             			      if(value != ''){
+			             			               return value.split('').reverse().join('');
+			             			      }else{
+			             			    	  this.message = this.message.split('').reverse().join('');  
+			             			    	  this.hasError = (this.isActive == true ?true:false);
+			             			    	  this.isActive = (this.hasError == true ?false:true);
+			             			    	  this.classObject.hasError = (this.classObject.isActive == true ?true:false);
+			             			    	  this.classObject.isActive = (this.classObject.hasError == true ?false:true);
+			             			      }                    			      
+		           	               },
+		            	           now : function(){
+		  	    		    	       return Date.getYear();
+		  	    		           },
+		  	    		           getAnswer:_.debounce(
+		  	    		        		   function(){
+		  	    		        			    var vm = this;
+		  	    		        			    if(this.question.indexOf('?') == -1){
+		  	    		        			    	       this.answer = "Question usually contain a question mark:)";
+		  	    		        			    }else{
+		  	    		        			    	       this.answer = "Thinking...";
+		  	    		        			    	       axios.get("https://yesno.wtf/api")
+		  	    		        			    	       .then(function(response){
+		  	    		        			    	    	         vm.answer = _.capitalize(response.data.answer);
+		  	    		        			    	    	         console.log("statusText : "+response.statusText);
+		  	    		        			    	    	         console.log(response.data);
+		  	    		        			    	    	       console.log(response.config);
+		  	    		        			    	    	     console.log(response.headers);
+		  	    		        			    	    	     console.log(response.data.answer);
+		  	    		        			    	       })
+		  	    		        			    	       .catch(function(error){
+		  	    		        			    	    	         vm.answer = "Could not reach the API "+error;
+		  	    		        			    	       })
+		  	    		        			    }
+		  	    		        		   },500)
+                	   },
+                	   watch:{
+                		          question:function(){
+                		        	          this.answer = "Waiting for you to stop typing...";
+                		        	          this.getAnswer();
+                		          }                	              
+                	   },
+                	   created:function(){
+                		           console.log("created at "+new Date());
+                		          // alert(new Date());                		           
+                	   },
+                	   filters:{
+                		    capitalize:function(value){
+                		    	  if(!value){
+                		    		   return '';
+                		    	  }else{
+                		    		        var str = value.toString();
+                		    		        return str.charAt(0).toUppercase()+str.slice(1);
+                		    	  }
+                		    }
+                	   },
+            		   computed:{            			               			  
+			            			     classObject2:function(){
+				          			         return {
+				          			        	      'active' : this.isActive && !this.hasErroe,
+				          			        	      'hasError' : !this.isActive && this.hasError
+				          			         }
+				          		         },
+						          		 reversMessage:function(){
+							    	           return this.message.split('').reverse().join('');
+							             },
+							             now2:function(){
+							            	   return Date.now();
+							             },
+							             fullName:function(){
+							            	          return this.firstName+" "+this.lastName;
+							             },
+							             fullName2:{
+							            	     set:function(value){
+							            	    	 var names = value.split(' ');
+							            	    	 this.firstName = names[0];
+							            	    	 this.lastName = names[names.length - 1];
+							            	     },
+							                     get:function(){
+							                    	 return this.firstName+" "+this.lastName;
+							                     }
+							             }
+            		      }                	  
+                   });
+                   
+                   var span_mesg1 = document.getElementById("mesg1");
+                   var my_data = {name:"NieWang",age:22};
+					window.onload = function(){
+					    span_mesg1.addEventListener("mouseover",function(){                	        	  
+					  	            message.seen = true; 
+					    });
+					    span_mesg1.addEventListener("mouseout",function(){
+					  	            message.seen = true;                	        	            
+					    });
+					    if(my_data.name === message.name){
+					  	       //alert("equals!");
+					    }					   
+					    console.log(message.fullName2);
+					};
+ 
+                                                        
+</script>
+<script type = "text/javascript">
+					var formTest = new Vue({
+					    el:"#formTest",
+					    data:{
+					               usernameMode:true,
+					               emailMode:false
+					    },
+					    create:{
+					    	
+					    },
+					    methods:{
+					    	      change:function(value){
+					    	    	         if(!value){
+					    	    	        	     alert("Error!");
+					    	    	         }else{
+					    	    	        	     if(value.toString() == "usernameMode"){
+					    	    	        	    	         this.usernameMode = true;
+					    	    	        	    	         this.emailMode = false;
+					    	    	        	     }else if(value.toString()== "emailMode"){
+					    	    	        	    	         this.emailMode = true;
+					    	    	        	    	         this.usernameMode = false;
+					    	    	        	     }
+					    	    	         }
+					    	      }					    	     
+					    },
+					    computed:{
+					    	
+					    }
+					});
+</script>
+<script type = "text/javascript">
+/*Vue.component('todo-item',{
+    template:'\
+             <li>\
+                <span>{{title}}</span>\
+                <button v-on:click="$emit(\'remove\')">X</button>\                
+             </li>\
+         ', 
+         props:['title']
+});*/
+
+var todoListExample = new Vue({
+                	     el:"#todo-list-example",
+                	     data:{
+                	    	        newTodoText:'',
+                	    	        list:[
+                	    	        	     'A','B','C','D'    
+                	    	        ],
+                	    	        numbers:[1,2,3,4,5,6,7,8,9,10],
+                	    	        strList:["Hello","I'm Nie Wang"],
+                	    	        count:0,
+                	    	        url:"",
+                	    	        username:"",
+                	    	        strValues:[]                	    	       
+                	     },
+                	     methods:{
+                	    	        addToList:function(){
+                	    	        	        this.list.push(this.newTodoText);
+                	    	        	        this.newTodoText = '';
+                	    	        },
+                	    	        odd:function(){
+                	    	        	    return this.numbers.filter(function(number){
+                	    	        	    	       return number % 2 !== 0;
+                	    	        	    });
+                	    	        },
+                	    	        even:function(){
+                	    	        	    return this.numbers.filter(function(number){
+                	    	        	    	       return number % 2 === 0;
+                	    	        	    });
+                	    	        },
+                	    	        filter:function(){
+                	    	        	      return this.strList.filter(function(str){
+                	    	        	    	           return str.match('o');
+                	    	        	      });
+                	    	        },
+                	    	        counter:function(){
+                	    	        	       this.count += 1;
+                	    	        },
+                	    	        reducer:function(){
+         	    	        	       this.count -= 1;
+         	    	                },
+         	    	                toPage:function(){
+         	    	                	     
+         	    	                },
+         	    	                Alert:function(message, event){
+         	    	                	      if(event)event.preventDefault
+         	    	                	      alert(message);
+         	    	                }
+                	     },
+                	     watch:{
+                	    	        url:function(str){
+                	    	        	      this.url =  str;                	    	        	      
+                	    	        },
+                	    	        username:function(str){
+                	    	        	         if(str.match("[!！@#￥$……%（）^&*()]")){
+                	    	        	        	     alert("用户名不能包含特殊字符 !！@#￥$……%（）^&*()]");
+                	    	        	        	     str = str.toString();
+                	    	        	        	     this.strValues = str;
+                	    	        	         }
+                	    	        }                	               
+                	     }
+                   });                        
+                       Vue.set(todoListExample.list, 4, 'E');
+                       todoListExample.list.splice(10);
+                       
+</script>
+<script type = "text/javascript">
+                  Vue.config.keyCodes = {
+                	           1 : 49,
+                	           f : 70
+                  }
+</script>
+<script type = "text/javascript">
+                   new Vue({
+                	     el:"#formCheck",
+                	     data:{
+                	    	     hobbies:[],
+                	    	     sex:"",
+                	    	     selected:"A",
+                	    	     selecteds:["A"],
+                	    	     options:[
+                	    	    	 {text:"1", value:"A"},
+                	    	    	 {text:"2", value:"B"},
+                	    	    	 {text:"3", value:"C"},
+                	    	    	 {text:"4", value:"D"}
+                	    	     ],
+                	    	     male:"male",
+             	    	         female:"female",
+             	    	         age:0,
+             	    	         lazy:""
+                	     },
+                	     methods:{
+                	    	        Alert:function(message, event){
+                	    	        	  if(event)event.preventDefault;
+                	    	        	  alert(message);                	    	        	
+                	    	        }
+                	     }
+                   });          
+</script>
+<script type = "text/javascript">
+
+                         
+                         Vue.component("simple-component",{                        	                            
+                        	    template:'<button v-on:click="count += 1" v-text="count"></button>',
+                        	    data:function(){
+                        	    	     return{
+                        	    	    	      count:0
+                        	    	     }
+                        	    }
+                         });                                                 
+                         
+                         Vue.component("child",{                        	      
+                        	       data:function(){
+                        	    	         return {
+                        	    	        	          myMessage:''
+                        	    	         }
+                        	       },
+                        	       template:'\
+                        	                   <p>\
+                        	                    	<input v-model="myMessage">\
+                        	                    	<br>\
+                        	                    	<span v-text="myMessage"></span>\
+                        	                   </p>\
+                        	       '
+                         });                    
+                            
+                         Vue.component("child2",{
+                        	       props:["message2"],
+                        	       template:'<span v-text="message2" ></span>'
+                         });
+                         
+                         Vue.component("comp",{//["number", "number2"]
+                        	     props:{
+                        	    	         number:{
+                        	    	        	        type: [String, Number],
+                        	    	        	        required:true
+                        	    	         },
+                        	    	         number2:{
+                        	    	        	 type: [String, Number],
+                        	    	        	 required:true
+                        	    	         },
+                        	    	         validator:{
+                        	    	        	 number:function(value){
+                        	    	        	          return value>10
+                        	    	              }
+                        	    	         }
+                        	     },
+                        	     template:'\
+                        	                 <p>\
+                        	                 <span v-text="normalizedSize"></span>\
+                        	                 <button v-on:click="alert2">calculate</button>\
+                        	                 </p>\
+                        	                 ',
+                        	     data:function(){
+                    	    	     return {
+                    	    	    	         number3:this.number+this.number2
+                    	    	     } 
+                        	     },
+                        	     methods:{
+                        	    	         alert2:function(){
+                        	    	        	       alert(this.number*this.number2);    
+                        	    	        	       //alert("number3 = "+this.number3);
+                        	    	        	       this.$emit("alert2");
+                        	    	         }                        	                 
+                        	     },
+                        	     computed:{
+                        	    	           normalizedSize:function(){
+                        	    	        	                return this.number+this.number2;
+                        	    	           }
+                        	     }
+                         });
+                         
+                         new Vue({
+                        	 el:"#myComponent",
+                        	 data:{
+                     		    message:"",
+                     		    number:0
+                     	 },
+                     	 methods:{
+                     		         Alert:function(){
+                     		        	         alert("number = "+this.number);              		        	         
+                     		         }
+                     	 }
+                         });
+</script>
+<script type = "text/javascript">
+             Vue.component("button-counter",{    
+            	       //props:["child-counter"],            
+            	       template:"<button v-on:click='childCounter' v-text='counter'></button>",
+            	       data:function(){
+            	    	        return {
+            	    	        	counter:0
+            	    	        }
+            	       },
+            	       methods:{
+            	    	            childCounter:function(){
+            	    	            	       this.counter += 1; 
+            	    	            	       this.$emit("child-counter");
+            	    	            }
+            	       }
+             });
+             
+             new Vue({
+            	   el:"#counter-event-example",
+            	   data:{
+            		          total:0
+            	   },
+            	   methods:{
+            		            totalCounter:function(){
+            		            	    this.total += 1;       
+            		            }
+            	   }
+             });
+</script>
+<script type = "text/javascript">
+                
+                 Vue.component("mycomponent",{
+                	       props:{
+	                	    	      value:{
+			   	    	        	            type:Number,
+			   	    	        	            required:true
+	   	    	                      }, 
+                	    	          label:{
+                	    	        	        type:String,
+                	    	        	        required:true
+                	    	          }                	    	          
+                	       },
+                	       data:function(){
+                	    	           return {
+                	    	        	           price:0
+                	    	           }
+                	       },
+                	       template:'\
+                	                   <p>\
+                	                        <label v-if="label" v-text="label"></label>\
+                	                        $\
+                	                        <input\
+                	                                 ref="input"\
+                	                                 v-bind:price="value"\
+                	                                 v-on:focus="selectAll"\
+                	                                 v-on:input="updateValue($event.target.value)"\
+                	                        >\
+                	                  </p>\
+                	       ',
+                	       methods:{
+                	    	            selectAll:function(event){
+                	    	            	          setTimeout(function(){
+                	    	            	        	    event.target.select();
+                	    	            	          }); 
+                	    	            },
+                	    	            updateValue:function(value){
+                	    	            	            var formattedValue = value.trim().slice(0,value.indexOf('.')+3);
+                	    	            	            if(formattedValue !== value){
+                	    	            	            	        this.$refs.input.value = formattedValue;
+                	    	            	            }
+                	    	            	            this.$emit("input", Number(formattedValue));
+                	    	            }
+                	       }
+                 });
+                 
+                 new Vue({
+                	    el:"#app",
+                	    data:{
+                	    	      price:0,
+                	    	      price2:0
+                	    },
+                	    methods:{
+                	    	         total:function(){
+                	    	        	       return this.price+this.price2;
+                	    	         }
+                	    }
+                 });
+</script>
+<script type = "text/javascript">
+
+                    Vue.component("parentComponent",{
+                    	        template:'\
+                    	              <div>\
+                    	                  <span>I am parent component!</span>\
+                    	                  <child-component><span>I am fine!</span></child-component>\
+                    	              </div>\
+                    	        '
+                    });
+                    
+					Vue.component("childComponent",{
+						        template:'\
+						               <div>\
+    						               <span>I am child component!</span>\
+						                   <slot>\
+					                            <span>I am slot in child component!</span>\
+					                       </slot>\
+						               </div>\
+						        '
+					});
+                    
+					Vue.component("app-layout",{
+					           template:'\
+					                  <div>\
+					                       <header>\
+				                                <slot name="header"></slot>\
+				                                <slot text="I am slot!"></slot>\
+					                       </header>\
+					                       <main>\
+					                            <slot></slot>\
+					                       </main>\
+					                       <footer>\
+					                            <slot name = "footer"></slot>\
+					                       </footer>\
+					                   </div>\
+					           '
+					});
+					
+                    new Vue({
+                    	       el:"#componentTest"
+                    });
+</script>
+<script type = "text/javascript">
+                                 
+                     
+                      Vue.component("async-component",function(resolve, reject){
+                    	                      setTimeout(function(){
+                    	                    	     resolve({
+                    	                    	    	 template:'\
+                    	                    	    	        <div>\
+                    	                    	    	             <span>async-component</span>\
+                    	                    	    	        </div>\
+                    	                    	    	 '
+                    	                    	     }); 
+                    	                      },2000);
+                      });
+                      
+                      Vue.component("list-component",{
+                    	          data:function(){
+                    	        	        return {
+                    	        	        	listArray:["A", "B", "C", "D"]                    	        	        		    
+                    	        	        }
+                    	          },
+                    	          template:'\
+                    	                  <ul>\
+                    	                      <li v-for="list in listArray" v-text="list"></li>\
+                    	                  </ul>\
+                    	          '
+                      });
+
+                      Vue.component("tree-folder",{
+                    	         tempalte:'\
+                    	                <span v-text="folder.name"></span>\
+                    	                <tree-folder-contents :children="folder.children" />\
+                    	         ' 
+                      });
+                      
+                      Vue.component("example",{
+                    	        template:'\
+                    	             <div>\
+	                    	              <span v-text="message"></span>\
+	                    	              <button v-on:click = "update">UPDATE</button>\
+                    	             </div>\
+                    	        ',
+                    	        data:function(){
+                    	        	       return {
+                    	        	    	          message:""
+                    	        	       }
+                    	        },
+                    	        methods:{                    	        	
+                    	        	       update:function(){
+                    	        	    	          this.message="updated";                    	        	    	          
+                    	        	    	          console.log("1 : "+this.$el.textContent);
+                    	        	    	          this.$nextTick(function(){
+                    	        	    	        	         console.log("2 : "+this.$el.textContent);
+                    	        	    	          });                    	        	    	          
+                    	        	       }
+                    	        }
+                      });
+                      
+                     var app2 =  new Vue({
+                    	         el:"#app2",
+                    	         data:{
+                    	        	        currentView:{
+                    	        	        	            template:"<span>I'm a currentView</span>"
+                    	        	        },
+                    	        	        currentView2:{
+                    	        	        	            template:'\
+                    	        	        	                    <ul>\
+                    	        	        	                        <li>A</li>\
+                    	        	        	                        <li>B</li>\
+                    	        	        	                        <li>C</li>\
+                    	        	        	                        <li>D</li>\
+                    	        	        	                    </ul>\
+                    	        	        	            '
+                    	        	        },
+                    	        	        currentVie3:"componenta",
+                    	        	        number:2,
+                    	        	        message:''
+                    	         },
+                    	         components:{
+                    	        	             componenta:{
+                    	        	            	       tempalte:'\
+                    	        	            	               <span>component a</span>\
+                    	        	            	       '
+                    	        	             },
+                    	        	             componentb:{
+                    	        	            	       template:'\
+                    	        	            	               <span>component b</span>\
+                    	        	            	       '
+                    	        	             }
+                    	         },
+                    	         watch:{
+                    	        	       message:function(){
+                    	        	    	          return this.message;
+                    	        	       }
+                    	         }
+                      });
+                      
+                          app2.number = 3;
+                          console.log("app2.number = "+app2.number);                          
+                          Vue.nextTick(function(){                  
+                        	  app2.$el.textContent.number = 4;                               
+                          })
+                          console.log("app2.number = "+app2.number);
+                                                    
+                       
+</script>
+<script type = "text/javascript">
+                      
+                      new Vue({
+                    	         el:"#animationTest",
+                    	         data:{
+                    	        	       show:false,
+                    	        	       message:"I'm showing!",
+                    	        	       docState:"",
+                    	        	       currentView:"",
+                    	        	       on:true
+                    	         },
+                    	         components:{
+                    	        	             home:{
+                    	        	            	 template:'\
+                    	        	            	        <span>A</span>\
+                    	        	            	 '
+                    	        	             },
+                    	        	             home2:{
+                    	        	            	 template:'\
+                 	        	            	        <span>B</span>\
+                 	        	            	 '
+                 	        	             },
+                    	        	             home3:{
+                    	        	            	 template:'\
+                 	        	            	        <span>C</span>\
+                 	        	            	 '
+                 	        	             }
+                    	         }, 
+                    	         methods:{
+                    	        	         beforeEnter:function(el){
+                    	        	        	     el.style.opacity = 0;
+                    	        	        	     el.style.transformOrigin = "55px";
+                    	        	         },
+                    	        	         enter:function(el, done){
+                    	        	        	     Velocity(el, {opacity: 1,fontSize: "20px"}, {duration: 300,complete: done});                    	        	        	     
+                    	        	         },
+                    	        	         leave:function(el, done){
+                    	        	        	     Velocity(el, {translateX: "0px", rotateZ: "100deg"}, {duration: 600});
+                    	        	        	     Velocity(el, {rotateZ: "50deg"}, {loop: 2});
+                    	        	        	     Velocity(el, {                    	        	        	    	                      	        	        	    
+                    	        	        	    	      translateX: "0px",
+                    	        	        	    	      translateY: "0px",
+                    	        	        	    	      opacity:0
+                    	        	        	    	   }, {complete:done});
+                    	        	         }
+                    	         },
+                    	         computed:{
+                    	        	           buttonMessage:function(){
+                    	        	        	            if(this.on){
+                    	        	        	            	        return "on";
+                    	        	        	            }else{
+                    	        	        	            	        return "off";
+                    	        	        	            }                    	        	        	            
+                    	        	           }
+                    	         }
+                      });
+</script>
+<script type = "text/javascript">
+					new Vue({
+						  el: '#listTest',
+						  data: {
+								    list: Array.apply(null, {length: 81})
+								          .map(function(_, index){
+								        	        return {
+								        	        	id: index,
+								        	        	number: index % 9 + 1
+								        	        }
+								          }),								     
+								    nextNum: 0,
+								    show: false
+						  },
+						  methods: {
+						    randomIndex: function () {
+						      return Math.floor(Math.random() * this.list.length);
+						    },
+						    add: function () {
+						      this.list.splice(this.randomIndex(), 0, this.nextNum++);
+						    },
+						    remove: function () {
+						    	         if(this.list.length == 1){
+						    	        	         this.nextNum = 1;
+						    	         }
+						      this.list.splice(this.randomIndex(), 1);
+						    },
+						    shuffle: function () {
+							      this.list = _.shuffle(this.list);
+							}
+						}						    					
+					})
+</script>
+<script type = "text/javascript">
+                       
+                        new Vue({
+                        	         el:"#staggered-list",
+                        	         data:{
+                        	        	       list:[
+                        	        	    	       {mesg: "abstract"},
+                        	        	    	       {mesg: "before"},
+                        	        	    	       {mesg: "come"},
+                        	        	    	       {mesg: "depend"},
+                        	        	    	       {mesg: "effort"},
+                        	        	    	       {mesg: "free"},
+                        	        	    	       {mesg: "go"},
+                        	        	    	       {mesg: "high"},
+                        	        	    	       {mesg: "in"},
+                        	        	    	       {mesg: "join"},
+                        	        	    	       {mesg: "kiss"},
+                        	        	    	       {mesg: "less"},
+                        	        	    	       {mesg: "map"},
+                        	        	    	       {mesg: "normal"},
+                        	        	    	       {mesg: "open"},
+                        	        	    	       {mesg: "person"},
+                        	        	    	       {mesg: "queen"},
+                        	        	    	       {mesg: "rose"},
+                        	        	    	       {mesg: "super"},
+                        	        	    	       {mesg: "turn"},                        	        	    	       
+                        	        	    	       {mesg: "umbrella"},
+                        	        	    	       {mesg: "view"},
+                        	        	    	       {mesg: "window"},
+                        	        	    	       {mesg: "xylophone"},
+                        	        	    	       {mesg: "yarn"},
+                        	        	    	       {mesg: "zebra"},
+                        	        	       ],
+                        	        	       query: ""
+                        	         },
+                        	         computed:{
+                        	        	          computedList:function(){
+                        	        	        	              var vm = this;
+                        	        	        	              return this.list.filter(function(item){
+                        	        	        	            	         return item.mesg.toLowerCase().indexOf(vm.query.toLowerCase()) !== -1;
+                        	        	        	              });
+                        	        	          }
+                        	         },
+                        	         methods:{
+                        	        	           beforeEnter:function(el){                        	        	        	        
+                        	        	        	         el.style.opacity = 0,
+                        	        	        	         el.style.height = 0
+                        	                       },
+                        	        	           enter:function(el, done){
+                        	        	        	     var delay = 100;//el.dataset.index*150
+                        	        	        	        setTimeout(function(){
+                        	        	        	        	Velocity(el, {opacity: 1,height: "30px"}, {complete: done})	
+                        	        	        	        }, delay);                        	        	        	         
+                        	        	           },
+                        	        	           leave:function(el, done){
+                        	        	        	      var delay = 100;//el.dataset.index*150
+                        	        	        	          setTimeout(function(){
+                        	        	        	        	     Velocity(el, {opacity: 0,height: "10px"}, {complete: done})
+                        	        	        	          },delay);
+                        	        	           }
+                        	         }
+                        });
+</script>
+<script type = "text/javascript">
+                      
+				Vue.component('anchored-heading', {
+					  render: function (createElement) {
+					    return createElement(
+					      'h' + this.level,   // tag name 标签名称
+					      this.$slots.default // 子组件中的阵列
+					    )
+					  },
+					  props: {
+					    level: {
+					      type: [Number, String],
+					      required: true
+					    }
+					  }
+					});
+				new Vue({
+					    el: "#renderTest",
+					    data:{
+					    	     levels:[
+					    	    	      {degree: "1",data: "hello,"},
+					    	    	      {degree: 2,data: "you there"},
+					    	    	      {degree: 3,data: ", welcome to my world!"}
+					    	     ]
+					    }
+				});
+</script>
+<script type = "text/javascript">
+				new Vue({
+					  el: '#app3',
+					  data: function () {
+					  	var defaultSides = 10
+					  	var stats = Array.apply(null, { length: defaultSides })
+					    	.map(function () { return 100 })
+					  	return {
+					    	stats: stats,
+					    	points: generatePoints(stats),
+					      sides: defaultSides,
+					      minRadius: 50,
+					      interval: null,
+					      updateInterval: 500
+					    }
+					  },
+					  watch: {
+					  	sides: function (newSides, oldSides) {
+					    	var sidesDifference = newSides - oldSides
+					      if (sidesDifference > 0) {
+					      	for (var i = 1; i <= sidesDifference; i++) {
+					        	this.stats.push(this.newRandomValue())
+					        }
+					      } else {
+					        var absoluteSidesDifference = Math.abs(sidesDifference)
+					      	for (var i = 1; i <= absoluteSidesDifference; i++) {
+					        	this.stats.shift()
+					        }
+					      }
+					    },
+					    stats: function (newStats) {
+								TweenLite.to(
+					      	this.$data, 
+					        this.updateInterval / 1000, 
+					        { points: generatePoints(newStats) }
+					    	)
+					    },
+					    updateInterval: function () {
+					    	this.resetInterval()
+					    }
+					  },
+					  mounted: function () {
+					  	this.resetInterval()
+					  },
+					  methods: {
+					    randomizeStats: function () {
+					    	var vm = this
+					    	this.stats = this.stats.map(function () {
+					      	return vm.newRandomValue()
+					      })
+					    },
+					    newRandomValue: function () {
+					    	return Math.ceil(this.minRadius + Math.random() * (100 - this.minRadius))
+					    },
+					    resetInterval: function () {
+					    	var vm = this
+					    	clearInterval(this.interval)
+					      this.randomizeStats()
+					    	this.interval = setInterval(function () { 
+					      	vm.randomizeStats()
+					      }, this.updateInterval)
+					    }
+					  }
+					})
+				
+					function valueToPoint (value, index, total) {
+					  var x     = 0
+					  var y     = -value * 0.9
+					  var angle = Math.PI * 2 / total * index
+					  var cos   = Math.cos(angle)
+					  var sin   = Math.sin(angle)
+					  var tx    = x * cos - y * sin + 100
+					  var ty    = x * sin + y * cos + 100
+					  return { x: tx, y: ty }
+					}
+				
+					function generatePoints (stats) {
+						var total = stats.length
+						return stats.map(function (stat, index) {
+					    var point = valueToPoint(stat, index, total)
+					    return point.x + ',' + point.y
+					  }).join(' ')
+					}
+</script>
+</html>

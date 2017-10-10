@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+	<bean id="Person1" class="test3.Person" />
+	<bean id="Person2" class="test3.Person2" />
+	<bean id="timeZone" class="test3.TimeHandler" />
+	<bean id="drinkAction" class = "test3.Drinking"></bean>
+
+	<aop:config>
+		<aop:aspect id="time" ref="timeZone" order="1">
+			<aop:pointcut id="sayMethod" expression="execution(* test3.Hello.*(..))" />
+			<aop:before method="printTime" pointcut-ref="sayMethod" />
+			<!-- <aop:after method="printTime" pointcut-ref="sayMethod" /> -->
+		</aop:aspect>
+		<aop:aspect id = "drink" ref = "drinkAction" order = "2">
+             <aop:pointcut expression="execution(* test3.Hello.*(..))" id="drinkMethod"/>
+             <aop:before method="drink" pointcut-ref="drinkMethod"/>
+             <aop:after method="drink" pointcut-ref="drinkMethod"/>
+        </aop:aspect>
+	</aop:config>
+        
+        <bean id = "compactDisk" class = "test5.CompactDisk">
+                <constructor-arg value = "Forever Love"></constructor-arg>
+                <constructor-arg value = "LiHon"></constructor-arg>
+                <constructor-arg><null/></constructor-arg>
+        </bean>
+        
+        
+</beans>
