@@ -1,21 +1,0 @@
-
-f
-squid:S106"9Replace this use of System.out or System.err by a logger.(´ ÅHËRMAJORZ
-CODE_SMELL
-…squid:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“HÈRCRITICALZ
-CODE_SMELL
-k
-squid:S106$"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHÍRMAJORZ
-CODE_SMELL
-k
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ìáÇ¢øÿÿÿÿHÎRMAJORZ
-CODE_SMELL
-~squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·ß‘¦ûÿÿÿÿHÊRMAJORZ
-CODE_SMELL
-Rsquid:S1659"Declare "j" on a separate line.(¦¢ÉëùÿÿÿÿHÇRMINORZ
-CODE_SMELL
-k
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHÌRMAJORZ
-CODE_SMELL
-…squid:S1215("TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“HÉRCRITICALZ
-CODE_SMELL

@@ -1,14 +1,0 @@
-
-k
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHÂRMAJORZ
-CODE_SMELL
-…squid:S1215""TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“HÃRCRITICALZ
-CODE_SMELL
-k
-squid:S106 "9Replace this use of System.out or System.err by a logger.(ìáÇ¢øÿÿÿÿHÄRMAJORZ
-CODE_SMELL
-Usquid:S1659""Declare "time" on a separate line.(ÓÕ £ıÿÿÿÿHÅRMINORZ
-CODE_SMELL
-f
-squid:S106"9Replace this use of System.out or System.err by a logger.(ğŠ®€HÆRMAJORZ
-CODE_SMELL
