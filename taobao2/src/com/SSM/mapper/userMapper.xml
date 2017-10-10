@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.SSM.mapper.userMapper">
+	<!-- 
+		根据id查询得到一个user对象
+	 -->
+	 
+	 <resultMap type="com.SSM.bean.User" id="userList">
+	     <result column="en_user_id" property="en_user_id" />
+	     <result column="en_user_name" property="en_user_name"/>
+	     <result column="en_user_sex" property="en_user_sex"/>
+	     <result column="email" property="email"/>
+	     <result column="en_mobile" property="en_mobile"/>
+	     <result column="en_address" property="en_address"/>
+	     <result column="en_status" property="en_status"/>
+	 </resultMap>
+	 <!-- <parameterMap type="User" id="userAttributes">
+	     <parameter property="" />
+	 </parameterMap> -->
+	 <select id="getOneUser"  resultType="String" parameterType="com.SSM.bean.User">
+	 	select en_user_pwd from easybuy_user where en_user_id = #{en_user_id}
+	 </select>
+	 <select id = "allUser" resultMap="userList" >
+	     select * from easybuy_user 
+	 </select>
+	 <insert id="setUser"  parameterType="com.SSM.bean.User">
+	     insert into easybuy_user values (#{en_user_id},#{en_user_name},#{en_user_pwd},#{en_user_sex},#{en_user_birthday},
+	                                      #{en_user_identify_code},#{email},#{en_mobile},#{en_address},#{en_status})
+	 </insert>
+	 <delete id="userDelete" parameterType="com.SSM.bean.User">
+	     delete from easybuy_user where en_user_id = #{en_user_id}
+	 </delete>
+	 <!-- <update id="userUpdate" parameterMap="userAttributes">
+	     update easybuy_user set en_user_name = #{en_user_name}
+         where en_user_id = #{en_user_id}
+	 </update> -->
+</mapper>

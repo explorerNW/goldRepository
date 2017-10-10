@@ -1,0 +1,31 @@
+package com.SSM.controller;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.SSM.bean.User;
+import com.SSM.service.impl.UserServiceImpl;
+
+@Controller
+public class LoginAction {
+                    	              
+	                 @Autowired
+	                 UserServiceImpl service;
+	                 @RequestMapping("login.action")
+	                 public void login(HttpServletRequest request, HttpServletResponse response){
+	                	                  System.out.println(service.selectOne());	
+	                	                  try {
+											response.sendRedirect("index.jsp");
+										} catch (IOException e) {
+											// TODO Auto-generated catch block
+											e.printStackTrace();
+										}
+	                 }
+}
